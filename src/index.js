@@ -32,7 +32,7 @@ var FACTS = characters.map(function (character) {
   var code = character.charCodeAt();
   var binaryCode = code.toString(2).split('').join(' ');
 
-  return 'The ASCII code for ' + character + ' is ' + code + '. In binary, that is ' + binaryCode + '.';
+  return 'The code for the letter ' + character + ' is ' + code + '. In binary, that is ' + binaryCode + '.';
 });
 
 
@@ -102,8 +102,8 @@ function handleNewFactRequest(response) {
   var randomFact = FACTS[factIndex];
 
   // Create speech output
-  var speechOutput = "Here's your fact: " + randomFact;
-  var cardTitle = "Your Fact";
+  var speechOutput = "Here's your ASCII code: " + randomFact;
+  var cardTitle = "Your ASCII code";
   response.tellWithCard(speechOutput, cardTitle, speechOutput);
 }
 

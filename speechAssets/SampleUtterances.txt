@@ -4,10 +4,12 @@ GetNewFactIntent tell me a fact
 GetNewFactIntent tell me an ASCII fact
 GetNewFactIntent give me a fact
 GetNewFactIntent give me an ASCII fact
-GetNewFactIntent tell me trivia
-GetNewFactIntent tell me ASCII trivia
-GetNewFactIntent give me trivia
-GetNewFactIntent give me an ASCII trivia
+GetNewFactIntent a code
+GetNewFactIntent an ASCII code
+GetNewFactIntent tell me a code
+GetNewFactIntent tell me an ASCII code
+GetNewFactIntent give me a code
+GetNewFactIntent give me an ASCII code
 GetNewFactIntent give me some information
 GetNewFactIntent give me some ASCII information
 GetNewFactIntent tell me something
