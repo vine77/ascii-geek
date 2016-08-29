@@ -23,10 +23,17 @@
  */
 var APP_ID = undefined;  // OPTIONAL: replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
+var characters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
 /**
  * Array containing ASCII facts
  */
-var FACTS = [];
+var FACTS = characters.map(function (character) {
+  var code = character.charCodeAt();
+  var binaryCode = code.toString(2).split('').join(' ');
+
+  return 'The ASCII code for ' + character + ' is ' + code + '. In binary, that is ' + binaryCode + '.';
+});
 
 
 /**
